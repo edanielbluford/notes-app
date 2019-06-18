@@ -1,4 +1,3 @@
-const validator = require("validator");
 const add = require("./utils.js");
 
 const sum = add(4, -2);
@@ -18,6 +17,21 @@ const msg = getNotes();
 
 console.log(msg);
 
-console.log(validator.isEmail("ernest@example.com"));
-console.log(validator.isEmail("ernest@example"));
-console.log(validator.isURL("https//www.google.com"));
+//
+//Challenge: Use the chalk library in your project
+//1. Install version 2.4.1 of chalk.
+//2. Load Chalk into app.js
+//3. Use it to print the sting "Success" to the console in green.
+//4. Test your work
+
+//
+//Bonus: Use docs to mess around with other string styles. Make text bold and inversed.
+const chalk = require("chalk");
+const greenMsg = chalk.green("Success!");
+const boldMsg = chalk.bold("Hello!");
+const inverseMsg = chalk.inverse("Spooky!");
+const inverseMsg2 = chalk.inverse(greenMsg);
+console.log(greenMsg);
+console.log(boldMsg);
+console.log(inverseMsg);
+console.log(inverseMsg2);
