@@ -18,6 +18,6 @@
   "homepage": "https://github.com/edanielbluford/notes-app#readme",
   "dependencies": {
     "chalk": "^2.4.1",
-    "validator": "^10.8.0"
+    "validator": "^13.7.0"
   }
 }
